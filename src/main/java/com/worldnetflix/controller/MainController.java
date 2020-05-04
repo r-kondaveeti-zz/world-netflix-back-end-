@@ -18,8 +18,8 @@ public class MainController {
         System.out.println(keyword);
         System.out.println(encodedURL);
         HttpResponse<String> response = Unirest.get("https://unogs-unogs-v1.p.rapidapi.com/aaapi.cgi?q="+encodedURL+"-!1900%2C2018-!0%2C5-!0%2C10-!0-!Any-!Any-!Any-!gt100-!%7Bdownloadable%7D&t=ns&cl=all&st=adv&ob=Relevance&p=1&sa=and")
-                .header("x-rapidapi-host", "unogs-unogs-v1.p.rapidapi.com")
-                .header("x-rapidapi-key", "60c2cc28femsh78aa8418212493fp1ba00fjsn4bedfd91e07d")
+                .header("")
+                .header("")
                 .asString();
         return response.getBody();
     }
